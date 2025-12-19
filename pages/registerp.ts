@@ -27,9 +27,9 @@ export class registerform{
   this.accountname = page.locator("input[id='name']");
   this.accountemail = page.locator("input[id='email']");
   this.accountpassword = page.locator("input[id='password']");
-  this.accountdobdate = page.locator("#uniform-days");
-  this.accountdobmonth = page.locator("#uniform-months");
-  this.accountdobyears = page.locator("#uniform-years");
+  this.accountdobdate = page.locator("select[id='days']");
+  this.accountdobmonth = page.locator("select[id='months']");
+  this.accountdobyears = page.locator("select[id='years']");
   }
   async launchUrl(){
     await this.page.goto("/");
@@ -63,9 +63,9 @@ export class registerform{
     await this.accountpassword.fill("test123456")
   }
   async verifyDOB(){
-    await this.accountdobdate.selectOption({value : "14"});
-    await this.accountdobmonth.selectOption({value : "10"});
-    await this.accountdobyears.selectOption({value : "1998"});
+    await this.accountdobdate.selectOption({label:"14"});
+    await this.accountdobmonth.selectOption({label:"October"});
+    await this.accountdobyears.selectOption({label:"1998"});
 
   }
 }
