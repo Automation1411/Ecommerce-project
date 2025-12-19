@@ -1,6 +1,6 @@
 import{test} from '@playwright/test';
 import{registerform} from '../../pages/registerp';
-test.describe("group of test",()=>{
+test.describe.serial("group of test",()=>{
 let register : registerform
 
 test.beforeEach("run it before test",async({page})=>{
@@ -13,7 +13,12 @@ test.beforeEach("run it before test",async({page})=>{
     await register.entername("ay")
     await register.enteremail("aytest12@gmail.com")
     await register.signupbuttonclick();
+    await register.verifyaccountinformationtext();
+    await register.verifytitle();
+    await register.verifyname("ayushQA");
+    await register.verifyemail();
+    await register.verifypassword();
+    await register.verifyDOB();
  })
-
 })
 

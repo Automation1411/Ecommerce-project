@@ -1,0 +1,123 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link "Website for automation practice" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "Website for automation practice" [ref=e9]
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link " Home" [ref=e14] [cursor=pointer]:
+            - /url: /
+            - generic [ref=e15]: 
+            - text: Home
+        - listitem [ref=e16]:
+          - link " Products" [ref=e17] [cursor=pointer]:
+            - /url: /products
+            - generic [ref=e18]: 
+            - text: Products
+        - listitem [ref=e19]:
+          - link " Cart" [ref=e20] [cursor=pointer]:
+            - /url: /view_cart
+            - generic [ref=e21]: 
+            - text: Cart
+        - listitem [ref=e22]:
+          - link " Signup / Login" [ref=e23] [cursor=pointer]:
+            - /url: /login
+            - generic [ref=e24]: 
+            - text: Signup / Login
+        - listitem [ref=e25]:
+          - link " Test Cases" [ref=e26] [cursor=pointer]:
+            - /url: /test_cases
+            - generic [ref=e27]: 
+            - text: Test Cases
+        - listitem [ref=e28]:
+          - link " API Testing" [ref=e29] [cursor=pointer]:
+            - /url: /api_list
+            - generic [ref=e30]: 
+            - text: API Testing
+        - listitem [ref=e31]:
+          - link " Video Tutorials" [ref=e32] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/AutomationExercise
+            - generic [ref=e33]: 
+            - text: Video Tutorials
+        - listitem [ref=e34]:
+          - link " Contact us" [ref=e35] [cursor=pointer]:
+            - /url: /contact_us
+            - generic [ref=e36]: 
+            - text: Contact us
+  - generic [ref=e39]:
+    - generic [ref=e41]:
+      - heading "Login to your account" [level=2] [ref=e42]
+      - generic [ref=e43]:
+        - textbox "Email Address" [ref=e44]
+        - textbox "Password" [ref=e45]
+        - button "Login" [ref=e46] [cursor=pointer]
+    - heading "OR" [level=2] [ref=e48]
+    - generic [ref=e50]:
+      - heading "New User Signup!" [level=2] [ref=e51]
+      - generic [ref=e52]:
+        - textbox "Name" [ref=e53]
+        - textbox "Email Address" [ref=e54]
+        - button "Signup" [ref=e55] [cursor=pointer]
+  - contentinfo [ref=e56]:
+    - generic [ref=e61]:
+      - heading "Subscription" [level=2] [ref=e62]
+      - generic [ref=e63]:
+        - textbox "Your email address" [ref=e64]
+        - button "" [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: 
+        - paragraph [ref=e67]:
+          - text: Get the most recent updates from
+          - text: our site and be updated your self...
+    - paragraph [ref=e71]: Copyright © 2021 All rights reserved
+  - text: 
+  - insertion [ref=e73]:
+    - generic [ref=e75]:
+      - generic "These are topics related to the article that might interest you" [ref=e76]: Discover more
+      - link "IT support services" [ref=e77] [cursor=pointer]:
+        - img [ref=e79]
+        - text: IT support services
+      - link "User experience design tools" [ref=e81] [cursor=pointer]:
+        - img [ref=e83]
+        - text: User experience design tools
+      - link "Business process automation" [ref=e85] [cursor=pointer]:
+        - img [ref=e87]
+        - text: Business process automation
+      - link "Software quality assurance" [ref=e89] [cursor=pointer]:
+        - img [ref=e91]
+        - text: Software quality assurance
+      - link "Performance testing services" [ref=e93] [cursor=pointer]:
+        - img [ref=e95]
+        - text: Performance testing services
+      - link "E-commerce automation tools" [ref=e97] [cursor=pointer]:
+        - img [ref=e99]
+        - text: E-commerce automation tools
+      - link "Software Testing" [ref=e101] [cursor=pointer]:
+        - img [ref=e103]
+        - text: Software Testing
+      - link "Automated testing frameworks" [ref=e105] [cursor=pointer]:
+        - img [ref=e107]
+        - text: Automated testing frameworks
+      - link "Manual testing training" [ref=e109] [cursor=pointer]:
+        - img [ref=e111]
+        - text: Manual testing training
+      - link "Database management systems" [ref=e113] [cursor=pointer]:
+        - img [ref=e115]
+        - text: Database management systems
+  - insertion [ref=e117]:
+    - iframe [ref=e120]:
+      - iframe [ref=f8e1]:
+        - generic [ref=f9e1]:
+          - generic [ref=f9e2]:
+            - generic:
+              - img [ref=f9e6] [cursor=pointer]
+              - button [ref=f9e8] [cursor=pointer]:
+                - img [ref=f9e9]
+          - insertion [ref=f9e16]:
+            - link "Advertisement" [ref=f9e19] [cursor=pointer]:
+              - /url: https://ad.doubleclick.net/pcs/click?xai=AKAOjst6ZtdBGgAfV1f6wIoYJnh73jI02fpqpWJEEKIFH7yuYHV57Q69GPwHskKnZaGEcQ7XiT1NB5P1ADsVz3esA7d4UX0KYjnQlloWNu0p_0Vp3eGkBWOo7JlFYBApaABaPB4JbT4np4NZ1V5c7jrUdBbjZeVZLNREQl34nRYu-DWeGBVZCe6LD7q6vfUOF0N2874hWQVU-ZnAnNE3C4Yye_Z_pqOQ8kTwP1lokM6cMWP09dJ0AxEUG1MRq79YpvhJTQXi9hxePxaqrxY4tj2TE_yJ92gU_3RU9Iifly_O9P7yIVESteSKaNCh3xaQsBUmdxGPplduzuyR-WTLZzSccnelFdwmFbPJ7_er61qITG9Xlt3gQsaQHbVBHt54w-zOZAStZTMDwRJoKALzAhqut1gAwB12DCzhmNVeHQKgHv8WCJcUwgFfbir_KKUXxGH2nVEdjPCPUbEcCYhkK08o-RvHr0XQnIiR4tp2wxN4OZiISpkLsYUJklKVlmo_XbWIH5MD42cf9v03eAxYDNG_A1bDbnFyzFY3t5Dwfaw70p6uLmr38qlBI9yJQQ&sai=AMfl-YQzd6q_KMNOR4dYrqxdLM8-SAyNIFL6yDJnk9q9isCzz0b6ROqg5tbEN2Q3RGLX3rFrRhUWiPmmc88ndxz9JI5Qcv9WperJiDonf5jm5WrhcSX3ibIBbNBQhntoo2YhntkSBCsJd9J1ni5bP_70ebon6E56ebISMX5zeDg3DXnwg0AbwgQcWk0RWt-qtbOrm4Nh7DX97u_FeiIfljgoe45Pl0zIn45GPAdU-BkJQVya-A&sig=Cg0ArKJSzE9vjyeFr_pQ&cry=1&fbs_aeid=%5Bgw_fbsaeid%5D&crd=aHR0cHM6Ly91bml0ZWRoZWFsdGhncm91cC5jb20&urlfix=1&adurl=https://googleads.g.doubleclick.net/dbm/clk%3Fsa%3DL%26ai%3DCQZjaWGdFaaSyHZXb3LUPy5nO4QK8gqKShAGNz5S6yxSeqIP9hUYQASD9tJ6VAWDlgoCA4A6gAe7l3uIByAEJqQJSFt0EtgxIPqgDAcgDmwSqBIwCT9Dv-LkJODIQTuf73ZOScFnHAKuXLHVN05LLP4exlWYDX9ub8XpaBh3AwN6Sc_UvvmCV7U35e43qh8ZW97iJtoeb4c22YxWuLOi1gP-1dRFeYK4-hmciOB6uVjfTxVPO-B-IUtIriZJW5I9FINATpp2A4tsNgqDhh0r8iExLxHvmmbmAxguCYhKrEKyKyxBb9bsg4p_SXjOmnBbml29z8kyLYaBE8KnsEnXHXzdvNDqB3F8FcWFBjNoAbgwRKLRvrJj-vEDi9nr7CVKcXkoHWi1XdtjPNJ4jz2LCMup801ZucehJRMvsfiOWFgpDoi9Q3hUk-qoEFxLJjTScM-22BlztPt-oPGDx0dHaZcAEs7jf6IsF4AQDiAXPi4f6UpAGAaAGTYAH-pmhnQKoB6fMsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQKoB-fXsQLYBwDSCC8IgGEQARifAzIIioKAgICAgAg6DYBAgMCAgICAqIACqANIvf3BOlj_mLeh9MmRA4AKAZgLAcgLAYAMAaoNAklO6g0TCL36yKH0yZEDFZUttwAdy4wzLPANAYgOCbATuLjyH9gTDYgUAdgUAdAVAcoWAgoA-BYBgBcBshcCGAKyGAkSAvpTGE0iAQDQGQE%26ae%3D1%26num%3D1%26cid%3DCAQSsgEAwksa0ftK8rnUb-IoW0JRS3sD1qrhLvI8vW7adupkmvAoePa0ae2eoxgB0h0v4e-1b4R5gvUld2NuucsIZQuwXC9uUGY01l1ekcjh0BAbxRm2dN66RwotB0SRfi1Qb8PGxeeA_wk8NAiQ4y1r96yKoxVmGxzseS5HxygswGAkKKMkrOHjbk-q_YuG_BTzP9TpaNGZgNJJR61HI1mIee7cPYn314fSWvpyVwo8nSBkUsI_GAE%26sig%3DAOD64_0RYEO3LRIj1fnZ7ZwN6F6RCbUvsA%26client%3Dca-pub-1677597403311019%26dbm_c%3DAKAmf-DwPvN6mw8CmDIoXMIv3QwsFyBEsJI2d_Lj8OPPhAfUuiDYUHibwocvOu9uYwCvS9psKmx1V1j9fwHPWdKZEIWwXBCLX2ox4xrRYNUbI_ZIxa39UVqhEmzjw28MZbDH4zLbDZBOyxMK_g3IQnbBuFu0VzcigmT54J5UamOA-ePioO0O7xrEGgeOzPqXUfvpDFI_aZTEM7qNJCDvwlnftzZqwu0mOgtIyDTN4jJaPQ-HztECmynKEIW2gKeqIiO8Zr6Jv8MsW5Ikm7zYANMVfY6MEbjajXFXrnPULGwIufTjJfDklck%26cry%3D1%26dbm_d%3DAKAmf-CS04U0j5qR35TAzCDCke7pvajIf8oL5HMfKWN4fwiIl_MQrMV3xXufs8rHn7iBldQMOZXpizy4pvcOtNc-oJd3_L5ynqEiPISCCRzvHVw9i5vIvCUJ3ySEZ6o4nniU8u4Eg-NbVgMjzb1I_6B_MhvpggSDoni_KfzNKPoMrsGEYePNT7_rEeTa0-6U6EBmc7TMbF4J4d67M89l1O-_FkRmJ5izSxi2sHnQiNsAKSPZHCnJkR0DMlqbpM_7-XtqnNNxhr2WJu2E3TVE7TYtGnGjKdyoVW1ygTbiwx10b6YRnGRQE6llzbTSQf_QxJbhxdjRt3AdSUMAjZXEbBn3m3j2atcywYqUncWCaVzFeQZcolF16TaZFbYFfiHzOMJi_zah-Fz6xh57Es37dvXZ0YhuhlrVqiZ80FlhQ860vwM3ukMSQwep_mTiRBFI-sibZpNUfbjfag269OheY536-LOxNRr3yRlThXsKP7uH8f2eO65RUz83KNmgp4nlkg_Afxx4badMMIzAxXUZYJacFGA3P6gFeYksGf72pj2gt95h5fyB7wiGR4y3XuCQlvQevhBvNgMcLXOTkoKk1HBkQwic9s9xAGzj97laPsltjFyIK2Rh72qAlxdBhYFfC7D73BIhyTQ9aEa78iYZ1c9n-vtMQRQbEpWtwOLOFlwbNEau-JImkHGRYy6Ww_9ziFCNMBIPziwfzDUJEf2FCvAJknyDgVBuAg%26adurl%3Dhttps://careers.unitedhealthgroup.com/job-search-results/%253Fkeyword%253D%252523gen%2526location%253DIndia%2526country%253DIN%2526radius%253D25%2526src%253DUNS-19965%2526utm_source%253Dyoptima.com%2526utm_medium%253Ddisplay%2526utm_campaign%253DIndia%2526utm_content%253Dniche_site%2526utm_term%253D419097523%2526ss%253Dpaid%2526dclid%253D%2525edclid!%2526gad_source%253D7
+              - img "Advertisement" [ref=f9e20]
+```
