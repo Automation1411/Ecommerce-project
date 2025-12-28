@@ -1,6 +1,6 @@
 import{Page, expect, Locator} from '@playwright/test';
 
-export class dashboardprofile{
+export class Dashboardprofile{
     readonly page: Page
     readonly profile: Locator;
     readonly about: Locator;

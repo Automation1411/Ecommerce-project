@@ -1,10 +1,10 @@
 import{test, Page} from '@playwright/test';
-import { login } from '../../pages/loginp';
+import { Login } from '@pages/logins';
 
 test.describe(()=>{
-    let loginpage : login
+    let loginpage : Login
     test.beforeEach(async({page})=>{
-       loginpage = new login(page)
+       loginpage = new Login(page)
        await loginpage.open();
     })
     test("Verify the login page",async()=>{

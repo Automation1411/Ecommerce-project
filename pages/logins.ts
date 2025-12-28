@@ -1,6 +1,6 @@
 import{Page, Locator, expect} from '@playwright/test';
 
-export class login{
+export class Login{
   readonly page: Page;
   readonly orangehrm: Locator;
   readonly username: Locator;
