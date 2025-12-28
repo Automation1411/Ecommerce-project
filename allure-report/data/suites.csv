@@ -1,2 +1,7 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","6098","verify the register form","","2025-12-16","passed","2025-12-16","group of test","register\register.spec.ts","",""
+"","30099","To verify the dashboard user profile","","2025-12-21","broken","2025-12-21","","dashboard\dashboard.spec.ts","",""
+"","12998","verify the register form","","2025-12-20","failed","2025-12-20","group of test","register\register.spec.ts","",""
+"","19744","account form","","2025-12-19","failed","2025-12-19","group of test","register\register.spec.ts","",""
+"","10077","Verify the login page","","2025-12-21","passed","2025-12-21","","register\login.spec.ts","",""
+"","9175","Verify the login page","","2025-12-21","passed","2025-12-21","","login\login.spec.ts","",""
+"","8436","Verify the new signup complete form","","2025-12-19","failed","2025-12-19","group of test","register\register.spec.ts","",""
