@@ -8,7 +8,7 @@ test.describe("dashboard test",()=>{
     })
     test("admin test cases",async({page})=>{
         const adminclick = new Admin(page);
-        await adminclick.verifyadminbutton();
+        await adminclick.verifyadminbutton("Rav");
        
     })
     
