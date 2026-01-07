@@ -27,6 +27,10 @@ export class Register{
     readonly zipcode: Locator;
     readonly mobilenumber: Locator;
     readonly createbutton : Locator;
+    readonly accountcreated : Locator;
+    readonly continue : Locator;
+    readonly textlogged: Locator;
+    readonly deleteacc: Locator;
     
     constructor({page}:{ page: Page }){
         this.page = page
@@ -36,7 +40,7 @@ export class Register{
         this.email = page.locator('input[placeholder="Email Address"]').last();
         this.signupbutton = page.locator("//form[@action='/signup']//button[@type='submit']").last();
         this.accountinformation = page.getByText("Enter Account Information");
-        this.title = page.locator(".uniform-id_gender1");
+        this.title = page.locator("input[id='id_gender1']");
         this.accountname= page.locator("//div[@class='required form-group']//input[@id='name']")
         this.accountpassword = page.locator("//div[@class='required form-group']//input[@id='password']")
         this.days= page.locator("select[ id ='days']");
@@ -55,9 +59,11 @@ export class Register{
         this.zipcode = page.locator("input[id='zipcode']");
         this.mobilenumber = page.locator("input[id='mobile_number']");
         this.createbutton = page.getByText("Create Account");
+        this.accountcreated = page.getByText("Account Created!");
+        this.continue = page.getByRole("link",{name: "Continue"});
+        this.textlogged = page.getByText("Logged in as");
+        this.deleteacc = page.getByRole('link',{name: "delete"})
         
-
-
 
     }
 
@@ -76,8 +82,8 @@ export class Register{
             console.log("test")
             throw err;
         }
-        await this.name.fill("sumi")
-        await this.email.fill("sumitest@gmail.com")
+        await this.name.fill("sumit")
+        await this.email.fill("sumitest123@gmail.com")
         await this.signupbutton.click();
         try{
             await expect(this.accountinformation).toBeVisible();
@@ -85,14 +91,31 @@ export class Register{
             console.log("testing")
             throw err;
         }
-
-    // Fill details: Title, Name, Email, Password, Date of birth
-
-
-    //Address Information
-
+     await expect(this.accountinformation).toBeVisible();
+     await this.title.check();
+     await this.accountname.fill("Ayush singh");
+     await this.accountpassword.fill("ayush1234test");
+     await this.days.selectOption({value : '1'});
+     await this.months.selectOption({value: '10'});
+     await this.years.selectOption({value: '1998'});
+     await this.signupnewsletter.check();
+     await this.specialoffer.check();
+     await this.firstname.fill("akash");
+     await this.lastname.fill("singh");
+     await this.company.fill("Mtap technologies");
+     await this.address.fill("Delhi")
+     await this.address2.fill("New Delhi");
+     await this.country.selectOption("India");
+     await this.state.fill("New Delhi Delhi NCR");
+     await this.city.fill("New delhi Delhi NCR");
+     await this.zipcode.fill("201002");
+     await this.mobilenumber.fill("9650382808");
+     await this.createbutton.click();
+     await expect(this.accountcreated).toBeVisible();
+     await this.continue.click();
+     const username = this.textlogged;
+     await expect(username).toContainText("Ayush singh");
+     await this.deleteacc.click();
 
     }
-
-
 }
