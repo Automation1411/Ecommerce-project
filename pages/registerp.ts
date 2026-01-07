@@ -62,7 +62,7 @@ export class Register{
         this.accountcreated = page.getByText("Account Created!");
         this.continue = page.getByRole("link",{name: "Continue"});
         this.textlogged = page.getByText("Logged in as");
-        this.deleteacc = page.getByRole('link',{name: "delete"})
+        this.deleteacc = page.getByRole('link',{name: "Delete Account"})
         
 
     }
@@ -83,7 +83,7 @@ export class Register{
             throw err;
         }
         await this.name.fill("sumit")
-        await this.email.fill("sumitest123@gmail.com")
+        await this.email.fill("sumitest89@gmail.com")
         await this.signupbutton.click();
         try{
             await expect(this.accountinformation).toBeVisible();
