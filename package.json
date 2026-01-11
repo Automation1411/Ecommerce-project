@@ -1,18 +1,23 @@
 {
   "name": "ecommerce-automation",
+  "type": "module",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Automation1411/Ecommerce-project.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Automation1411/Ecommerce-project/issues"
+  },
+  "homepage": "https://github.com/Automation1411/Ecommerce-project#readme",
   "description": "",
   "devDependencies": {
     "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.2"
-  },
-  "dependencies": {
-    "allure-playwright": "^3.4.3",
-    "dotenv": "^17.2.3"
+    "@types/node": "^25.0.6"
   }
 }
