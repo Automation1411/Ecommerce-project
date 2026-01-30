@@ -32,7 +32,8 @@ export class Register{
         this.accountcreated = page.getByText("Account Created!");
         this.continue = page.getByRole("link",{name: "Continue"});
         this.textlogged = page.getByText("Logged in as");
-        this.deleteacc = page.getByRole('link',{name: "Delete Account"})
+        this.logout = page.getByRole('link',{name : " Logout"});
+        //this.deleteacc = page.getByRole('link',{name: "Delete Account"})
         
 
     }
@@ -53,7 +54,7 @@ export class Register{
             throw err;
         }
         await this.name.fill("sumit")
-        await this.email.fill("sumitest8967@gmail.com")
+        await this.email.fill("jaimatadi12@gmail.com")
         await this.signupbutton.click();
         try{
             await expect(this.accountinformation).toBeVisible();
@@ -85,7 +86,8 @@ export class Register{
      await this.continue.click();
      const username = this.textlogged;
      await expect(username).toContainText("Ayush singh");
-     await this.deleteacc.click();
+     await this.logout.click();
+     //await this.deleteacc.click();
 
     }
 }

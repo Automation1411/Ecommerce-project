@@ -1,9 +1,10 @@
 import { Register } from '../../page/registerpage';
 import { test } from '@playwright/test';
 
+//Register test cases
 test.describe("Register form", () => {
     let reg;
-
+   
     test.beforeEach(async ({ page }) => { 
         reg = new Register({ page });  // matches constructor
         await reg.open();
@@ -14,3 +15,5 @@ test.describe("Register form", () => {
         await reg.verifysignupoff();
     });
 });
+
+
