@@ -12,6 +12,10 @@ constructor({page}){
     this.password = page.locator("#password");
     this.confirmpassword = page.locator("#confirm_password");
     this.signupbutton = page.getByText("Signup");
+    this.successmessage = page.getByText("Registration Successful").first();
+    this.removetoaster = page.locator("#remove-toaster");
+    this.validsuccessmessage = page.getByText("Registration Successful").last();
+    this.login = page.locator('.btn-submit.uppercase.flex.items-center.gap-2.justify-center.mt-4');
 }
 
 async open(){
@@ -27,5 +31,9 @@ await this.email.fill("as@gmail.com");
 await this.password.fill("as1234")
 await this.confirmpassword.fill("as1234");
 await this.signupbutton.click();
+await expect(this.successmessage).toBeVisible();
+await this.removetoaster.click();
+await expect(this.validsuccessmessage).toBeVisible();
+await this.login.click();
 }
 }
