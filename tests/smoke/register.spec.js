@@ -1,7 +1,7 @@
 import{test} from '@playwright/test';
 import { Register } from '../../page/registerpage';
 
-test.describe("Group of register test case", async()=>{
+test.describe("Group of register test case",()=>{
  let reg;
     test.beforeEach(async({page})=>{    
       reg = new Register({page})
