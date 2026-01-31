@@ -54,7 +54,7 @@ export class Register{
             throw err;
         }
         await this.name.fill("sumit")
-        await this.email.fill("jaimatadi12@gmail.com")
+        await this.email.fill("jaimatadi05@gmail.com")
         await this.signupbutton.click();
         try{
             await expect(this.accountinformation).toBeVisible();
